@@ -1,0 +1,45 @@
+module main_tb;
+
+
+ password_compare m1( clk,reset,pass_key, pk, check,data_key, dk,match ,  stepout , not_match         // the password to compare    // the input to compare the password to
+ );
+
+     
+    reg clk,reset;
+    reg [2:0]pass_key;
+    reg [1:0]select;
+    reg pk;
+    reg check;
+    reg [2:0]data_key;
+    reg dk;
+    reg dir;
+    wire match ;  
+    wire stepout;
+    wire not_match;
+    
+    initial
+    begin
+        clk=0;
+        forever #250 clk=~clk;
+    end
+    
+    initial
+    begin
+        reset=0;
+        #2000000000
+        pk=1;
+        #2000000000
+        pass_key=3'b010;
+          #2000000000
+         dk=1;
+            #2000000000
+        data_key=3,b010;
+             #2000000000
+        check=1;
+       
+    end
+
+    
+    
+    
+    endmodule         // the password to compare    // the input to compare the password to

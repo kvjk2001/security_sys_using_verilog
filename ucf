@@ -1,0 +1,34 @@
+net "clk" loc = "p55";
+
+
+net "reset" loc = "p93";
+/*net "dir" loc="p94";                    //frc2
+net "select[1]" loc = "p95";
+net "select[0]" loc = "p97";*/
+net "check" loc="p104";
+
+
+net "stepout[0]" loc="p6";
+net "stepout[1]" loc="p5";
+net "stepout[2]" loc="p2";                 //frc9
+net "stepout[3]" loc="p38";
+
+
+            
+net "match" loc="p114";                
+net "not_match" loc="p115";                //frc3
+              
+
+
+
+
+net "pk" loc="p57";
+net "dk" loc="p59";
+net "pass_key[2]" loc="p62";                 //frc7
+net "pass_key[1]" loc="p67";
+net "pass_key[0]" loc="p66";
+
+
+net "data_key[2]" loc="p79";
+net "data_key[1]" loc="p78";                 
+net "data_key[0]" loc="p23";
