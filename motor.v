@@ -35,12 +35,6 @@ if(reset)
 begin
 stepout=4'b1000;
 stepcount=0;
-
-/*
-stepcount=stepcount+1;
-if(stepcount<=100)
-stepout={stepout[2:0],stepout[3]};*/
-
 end
 
 else
@@ -51,6 +45,11 @@ begin
 stepcount=stepcount+1;
 if(stepcount<=100)
 stepout={stepout[0],stepout[3:1]};
+
+
+if(stepcount>1000 && stepcount<=1200)
+stepout={stepout[2:0],stepout[3]};
+
     end
 end
 
